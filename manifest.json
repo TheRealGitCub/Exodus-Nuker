@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Exodus Nuker",
+	"description": "Enable Nuking of submissions on FurAffinity when it is diabled. Brought to you by Exodus Helper (http://exodushelper.com)",
+	"version": "1.0",
+	"content_scripts": [{
+		"matches": ["http://*.furaffinity.net/msg/submissions/*"],
+		"js": ["lib/jquery-2.1.4.min.js", "js/background.js"],
+		"css": ["css/main.css"]
+	}],
+	"permissions": [
+		"*://*.furaffinity.net/*",
+		"storage"
+	]
+}
